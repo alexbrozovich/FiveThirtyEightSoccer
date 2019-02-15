@@ -6,7 +6,7 @@ import pandas as pd
 def getSoccer(url, chosenLeague='ANY', year=str(datetime.date.today().year), month=str(datetime.date.today().month), day=str(datetime.date.today().day)):
     ##Convert the given date to a string that will match the format in the dataframe for filtering
     if len(day) == 1:
-        day = '0'+day
+        day = '0' + day
     if len(month) == 1:
         month = '0'+ month
     chosenDate = year + '-' + month + '-' + day
